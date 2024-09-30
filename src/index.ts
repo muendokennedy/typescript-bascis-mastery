@@ -63,6 +63,11 @@ function getPizzaDetail(identifier: string | number): Pizza | undefined{
   }
 }
 
+function addToArray<T>(array: T[], item: T): T[]{
+  array.push(item)
+  return array
+}
+
 addNewPizza({name: 'Chicken Bacon Ranch', price: 12})
 addNewPizza({name: 'BBQ Chicken', price: 12})
 addNewPizza({name: 'Spicy Sausage', price: 8})
